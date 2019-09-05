@@ -41,20 +41,21 @@ function emailIt() {
 
 // MESSAGE INPUT
 
-const okMessage = document.getElementById('okmessage');
+const okMessagecorrect = document.getElementById('okmessage');
 
-const textBox = document.getElementById('textnotcomplete');
+const textnotok = document.getElementById('textnotcomplete');
 
 const message = document.getElementById('message');
 
 message.addEventListener("keypress", messageIt)
 function messageIt() {
   if (message.value.length < 20) {
-    textBox.style.opacity = 1;
-    okMessage.style.opacity = 0;
+    console.log('y');
+    textnotok.style.opacity = 1;
+    okMessagecorrect.style.opacity = 0;
   }
-  else {
-    textBox.style.opacity = 0;
-    okMessage.style.opacity = 1;
+  else{
+    textnotok.style.opacity = 0;
+    okMessagecorrect.style.opacity = 1;
   }
 }

@@ -291,7 +291,7 @@ h1 {
 }
 
 .dose {
-    margin-right: 500rem;
+    margin-right: -1rem !important;
 }
 
 .dosed {
